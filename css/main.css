@@ -23,7 +23,7 @@ header, main, footer {
 
 /* div contenitore dei float */
 .row {
-  width: 85%;
+  width: 90%;
   margin: auto;
   /* debug */
 }
@@ -47,7 +47,7 @@ header {
 
 /* top header */
 .top-header-container {
-  width: 85%;
+  width: 90%;
   height: 30px;
   margin: auto;
   /* debug */
@@ -105,6 +105,11 @@ button {
   border: none;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
 }
 /* fine top header */
 
@@ -123,7 +128,7 @@ button {
 .jumbo-title {
   position: absolute;
   top: 50%;
-  left: 7.5%;
+  left: 5%;
   transform: translateY(-50%);
 }
 
@@ -142,13 +147,16 @@ h1 {
 
 /* REGOLE MAIN */
 
-/* prima section */
+/* prima section spiegone */
+
+/* title bar */
 .title-bar {
   height: 100px;
   width: 100%;
   /* debug */
   background-color: #d3d3d3;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .title-bar > div {
@@ -165,17 +173,49 @@ main p {
   margin: 10px;
 }
 
+/* row three-elements */
+
+/* immagini */
+.picture {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+#uno > .picture {
+  background-image: url(../img/profile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#due > .picture {
+  background-image: url(../img/computer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tre > .picture {
+  background-image: url(../img/doc.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* testo */
 .three-elements {
+  text-align: center;
+
   background-color: blue;
 }
 
+.three-elements h3 {
+  color: #7cbb02;
+}
 
 .element-three {
-  width: 25%;
+  width: 30%;
 }
 
 #due {
-  margin: 0 12.5%;
+  margin: 0 5%;
 }
 
 /* seconda section */
