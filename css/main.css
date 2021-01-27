@@ -28,7 +28,6 @@ header, main, footer {
   /* debug */
 }
 
-
 /* elementi float */
 .row > * {
   /* height: 300px; */
@@ -61,7 +60,6 @@ header {
   text-transform: uppercase;
   display: inline-block;
 }
-
 
 /* logo */
 .top-header.logo  img {
@@ -137,6 +135,9 @@ h1 {
  button.big {
    padding: 10px;
  }
+ /* fine jumbotron */
+
+ /* FINE HEADER */
 
 
 /* REGOLE MAIN */
@@ -146,7 +147,22 @@ h1 {
   height: 100px;
   width: 100%;
   /* debug */
-  background-color: grey;
+  background-color: #d3d3d3;
+  position: relative;
+}
+
+.title-bar > div {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main p {
+  color: #808080;
+  margin: 10px;
 }
 
 .three-elements {
