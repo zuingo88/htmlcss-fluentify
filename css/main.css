@@ -30,10 +30,8 @@ header, main, footer {
 
 /* elementi float */
 .row > * {
-  /* height: 300px; */
   float: left;
   /* debug */
-  background-color: lightblue;
 }
 
 
@@ -137,15 +135,24 @@ h1 {
   color: white;
   margin-bottom: 20px;
 }
+
  button.big {
    padding: 10px;
- }
+}
  /* fine jumbotron */
 
  /* FINE HEADER */
 
 
 /* REGOLE MAIN */
+section {
+  margin-bottom: 20px;
+}
+
+#spiegone {
+  border-bottom: solid 1px #808080;
+  margin: 0 10px 10px;
+}
 
 /* prima section spiegone */
 
@@ -170,7 +177,7 @@ h1 {
 
 main p {
   color: #808080;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 /* row three-elements */
@@ -202,8 +209,6 @@ main p {
 /* testo */
 .three-elements {
   text-align: center;
-
-  background-color: blue;
 }
 
 .three-elements h3 {
@@ -219,16 +224,68 @@ main p {
 }
 
 /* seconda section */
+
 .element-two {
   width: 40%;
   margin: 0 5%;
+  text-align: left;
   /* debug */
+}
+
+/* elemento immagine */
+#percorso .element-two:first-of-type {
+  height: 300px;
+  background-image: url(../img/mountain.svg);
+}
+
+#percorso a {
+  color: #0c325a;
+  text-decoration: underline;
 }
 
 /* REGOLE FOOTER */
 footer {
-  height: 80px;
+  height: 120px;
   margin-top: 10px;
+  padding: 0 5%;
 
-  background-color: purple;
+  /* debug */
+  position: relative;
+  background-color: #d3d3d3;
+}
+
+.footer-title {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+/* footer float */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-float {
+  width: 45%;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  margin: 0 20px;
+  text-align: center;
+}
+
+/* elementi float */
+.footer-float > * {
+  float: right;
+  margin: 5px;
+  /* debug */
+}
+
+#selezione {
+  border: 0;
+  border-bottom: solid 1px #808080;
+  background-color: transparent;
 }
