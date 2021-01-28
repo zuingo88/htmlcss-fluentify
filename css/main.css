@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -40,13 +44,10 @@ header {
   width: 100%;
   padding-top: 10px;
   /* debug */
-}
-
-/* top header */
-.top-header-contain, .jumbotron {
   background-color: #0c325a;
 }
 
+/* top header */
 .top-header-container {
   width: 90%;
   height: 30px;
@@ -139,12 +140,12 @@ h1 {
   margin-bottom: 20px;
 }
 
- button.big {
-   padding: 10px;
+button.big {
+  padding: 10px;
 }
- /* fine jumbotron */
+/* fine jumbotron */
 
- /* FINE HEADER */
+/* FINE HEADER */
 
 
 /* REGOLE MAIN */
@@ -272,7 +273,7 @@ footer {
 }
 
 /* footer float */
-.row::after {
+.row::after, .footer-float::after {
   content: "";
   display: table;
   clear: both;
@@ -292,7 +293,11 @@ footer {
   float: right;
   margin: 5px;
   /* debug */
+  /* display: table-cell;
+  vertical-align: middle; */
 }
+
+/* non riesco ad allineare verticalmente i float nel footer */
 
 #selezione {
   border: 0;
